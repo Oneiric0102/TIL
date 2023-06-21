@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div>
+                <label for="username">아이디: </label>
+                <input type="text" name="username" placeholder="ID" required>
+            </div><br>
+            <div>
+                <label for="password">비밀번호: </label>
+                <input type="password" name="password" placeholder="Password" required>
+            </div><br>
+            <div>
+                <label for="age">생년월일: </label>
+                <input type="date" name="age" min="0" max="100">
+            </div><br>
+            <div>
+                <label for="intro">자기소개</label><br>
+                <textarea name="intro" cols="30" rows="10"></textarea>
+            </div><br>
+            <div>
+                <label for="job">직업</label><br>
+                <select name="job" id="">
+                    <option value="student">학생</option>
+                    <option value="developer">개발자</option>
+                    <option value="teacher">강사</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="hobby">취미</label><br>
+                <input type="checkbox" name="hobby" value="movie">
+                <label for="hobby">영화감상</label>
+                <input type="checkbox" name="hobby" value="walk">
+                <label for="hobby">산책</label>
+                <input type="checkbox" name="hobby" value="reading">
+                <label for="hobby">독서</label>
+            </div><br>
+            <div>
+                <label for="alert">알림 수신 설정</label><br>
+                <input type="radio" name="alert" value="agree" checked>
+                <label for="alert">동의</label>
+                <input type="radio" name="alert" value="disagree">
+                <label for="alert">비동의</label>
+            </div><br>
+            <div>
+                <input type="submit" value="제출">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
