@@ -18,7 +18,7 @@
 HyperText Markup Language version5의 약어로, 웹콘텐츠의 구조와 표현을 위한 마크업 언어
 - 마크업 언어 : 문서의 구조와 의미를 표현하는 언어로, 주로 웹개발에서 사용(HTML, XML, Markdown 등등)
 
-# HTML의 구조
+## HTML의 구조
 - \<!DOCTYPE html> : HTML 문서의 첫 줄에 위치하는 선언문으로, 문서의 유형을 정의
 - \<html> : HTML 문서의 루트 요소를 정의
 - \<head> : 문서의 메타데이터를 정의하는 요소
