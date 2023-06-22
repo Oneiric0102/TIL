@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            flex-direction: column;
+            width: 400px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .text_input{
+            width: 300px;
+            height: 40px;
+            border: none;
+            padding: 10px;
+        }
+        .box {
+            flex-direction: column;
+            margin: 20px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+        }
+        .inner {
+            border-top: 1px solid lightgray;
+        }
+        .selection_box{
+            text-align: left;
+            padding: 20px;
+        }
+        .selection{
+            width: 300px;
+            height: 40px;
+            border: none;
+            font-size: 15px;
+            color:gray;
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .selection_group {
+            margin: 10px;
+        }
+        #title {
+            color: green;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #checkbox_list{
+            font-size: 15px;
+            color:gray;
+            margin-top: 10px;
+        }
+        #agree{
+            text-align: right;
+            margin-right: 20px;
+            font-size: 15px;
+            color:gray;
+        }
+        #signup{
+            margin: 20px;
+            width: 360px;
+            height: 50px;
+            color: white;
+            background-color: green;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <span id="title">회원가입</span>
+        <div class="box">
+            <div ><input class="text_input" type="text" name="userID" placeholder="아이디" required></div>
+            <span class="line"></span>
+            <input class="text_input inner" type="password" name="password" placeholder="비밀번호" required>
+        </div>
+        <div class="box">
+            <input class="text_input" type="text" name="username" placeholder="이름">
+            <input class="text_input inner" type="text" placeholder="생년월일 8자리">
+            <input class="text_input inner" type="text" name="phoneNum" placeholder="휴대전화번호"><br>
+            
+        </div>
+        <div class="box selection_box">
+            <div class="selection_group">
+                <label for="job">직업</label><br>
+                <select class="selection" name="job" id="">
+                    <option value="student">학생</option>
+                    <option value="developer">개발자</option>
+                    <option value="teacher">강사</option>
+                </select>
+            </div>
+            <div class="selection_group">     
+                <label for="hobby">취미</label><br>
+                <div id="checkbox_list">
+                    <input type="checkbox" name="hobby" value="movie">
+                    <label for="hobby">영화감상</label>
+                    <input type="checkbox" name="hobby" value="walk">
+                    <label for="hobby">산책</label>
+                    <input type="checkbox" name="hobby" value="reading">
+                    <label for="hobby">독서</label>
+                </div>
+            </div>
+        </div>
+        <div id="agree">            
+            <label for="alert">알림 수신 설정</label>
+            <input type="radio" name="alert" value="agree" checked>
+            <label for="alert">동의</label>
+            <input type="radio" name="alert" value="disagree">
+            <label for="alert">비동의</label>
+        </div>
+        <input type="submit" value="가입하기" id="signup">
+    </form>
+</body>
+</html>

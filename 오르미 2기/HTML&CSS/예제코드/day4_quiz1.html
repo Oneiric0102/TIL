@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            margin: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: lightgray;
+        }
+        #borderless {
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>구분</th>
+            <th>2016년</th>
+            <th>2022년</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>철학</th>
+                <td>50.0%</td>
+                <td>54.9%</td>
+            </tr>
+            <tr>
+                <th>소설</th>
+                <td>40.7%</td>
+                <td>53.4%</td>
+            </tr>
+            <tr>
+                <th>자기계발</th>
+                <td>51.0%</td>
+                <td>51.6%</td>
+            </tr>
+            <tr><td colspan="3" id="borderless">나는 이런 종류의 책이 사고싶다.</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

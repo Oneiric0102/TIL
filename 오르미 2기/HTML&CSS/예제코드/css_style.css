@@ -1,0 +1,22 @@
+/* 클래스 선택자 */
+.first {
+    color : blue;
+    font-size : 24px;
+}
+
+/* 아이디 선택자 */
+#second {
+    color: red;
+    font-size: 24px;
+}
+
+/* 선택자  여러개 사용 */
+p,span {
+    color: green;
+}
+
+/* 자식태그 선택 */
+div>p {
+    color : blue;
+    font-size : 24px;
+}
