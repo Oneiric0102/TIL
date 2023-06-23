@@ -4,100 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        form{
-            flex-direction: column;
-            width: 400px;
-            text-align: center;
-            margin-top: 50px;
-            font-size: 20px;
-        }
-        .text_input{
-            width: 300px;
-            height: 40px;
-            border: none;
-            padding: 10px;
-        }
-        .box {
-            flex-direction: column;
-            margin: 20px;
-            border: 1px solid lightgray;
-            border-radius: 10px;
-        }
-        .inner {
-            border-top: 1px solid lightgray;
-        }
-        .selection_box{
-            text-align: left;
-            padding: 20px;
-        }
-        .selection{
-            width: 300px;
-            height: 40px;
-            border: none;
-            font-size: 15px;
-            color:gray;
-            margin-top: 10px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-        }
-        .selection_group {
-            margin: 10px;
-        }
-        #title {
-            color: green;
-            font-weight: bold;
-            font-size: 30px;
-        }
-        #checkbox_list{
-            font-size: 15px;
-            color:gray;
-            margin-top: 10px;
-        }
-        #agree{
-            text-align: right;
-            margin-right: 20px;
-            font-size: 15px;
-            color:gray;
-        }
-        #signup{
-            margin: 20px;
-            width: 360px;
-            height: 50px;
-            color: white;
-            background-color: green;
-            border: none;
-            font-size: 20px;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="./signup_styles.css">
 </head>
 <body>
     <form action="./result.html" method="get">
         <span id="title">회원가입</span>
         <div class="box">
-            <div ><input class="text_input" type="text" name="userID" placeholder="아이디" required></div>
-            <span class="line"></span>
+            <input class="text_input" type="text" name="userID" placeholder="아이디" required>
             <input class="text_input inner" type="password" name="password" placeholder="비밀번호" required>
+            <input class="text_input inner" type="password" name="password" placeholder="비밀번호확인" required>
         </div>
         <div class="box">
-            <input class="text_input" type="text" name="username" placeholder="이름">
-            <input class="text_input inner" type="text" placeholder="생년월일 8자리">
+            <input class="text_input" type="email" name="email" placeholder="이메일" required>
+            <input class="text_input inner" type="text" name="username" placeholder="이름">
             <input class="text_input inner" type="text" name="phoneNum" placeholder="휴대전화번호"><br>
-            
         </div>
         <div class="box selection_box">
-            <div class="selection_group">
-                <label for="job">직업</label><br>
-                <select class="selection" name="job" id="">
-                    <option value="student">학생</option>
-                    <option value="developer">개발자</option>
-                    <option value="teacher">강사</option>
-                </select>
-            </div>
             <div class="selection_group">     
                 <label for="hobby">취미</label><br>
-                <div id="checkbox_list">
+                <div class="list">
                     <input type="checkbox" name="hobby" value="movie">
                     <label for="hobby">영화감상</label>
                     <input type="checkbox" name="hobby" value="walk">
@@ -105,6 +30,28 @@
                     <input type="checkbox" name="hobby" value="reading">
                     <label for="hobby">독서</label>
                 </div>
+            </div>
+            <div class="selection_group">
+                <label for="gender">성별</label><br>
+                <div class="list">
+                    <input type="radio" name="gender" value="man">
+                    <label for="gender">남자</label>
+                    <input type="radio" name="gender" value="woman">
+                    <label for="gender">여자</label>
+                </div>
+            </div>
+            <div class="selection_group">
+                <label for="city">도시</label><br>
+                <select class="selection" name="city">
+                    <option value="서울">서울</option>
+                    <option value="뉴욕">뉴욕</option>
+                    <option value="도쿄">도쿄</option>
+                    <option value="런던">런던</option>
+                </select>
+            </div>
+            <div class="selection_group">
+                <label for="city">생년월일</label><br>
+                <input style="width: 297px;" class="selection" type="date" placeholder="none">
             </div>
         </div>
         <div id="agree">            

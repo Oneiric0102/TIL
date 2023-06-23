@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./오르미 서비스/reset.css">
+    <style>
+        body {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            width: 96%;
+            justify-content: center;
+            margin:2%;
+            font-family: 'BMHANNAPro', sans-serif;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        article {
+            line-height: 1.5;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        img{
+            padding: 20px 0px;
+        }
+        .title {
+            background-color: lightgray;
+            width:96%;
+            padding: 2%;
+            font-size: 60px;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .index {
+            width:12%;
+            margin: 2% 1% 2% 0%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .main {
+            width: 63%;
+            margin: 2% 1%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .side_table{
+            width: 250px;
+            margin: 2% 0% 2% 1%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .index_list {
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .annotation {
+            padding: 10px;
+            font-size: 13px;
+            border-top: 1px solid gray;
+        }
+        .info {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .info_list{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px){
+        .content{
+            flex-direction: column;
+        }
+
+        .index, .main, .side_table{
+            width: 96%;
+            margin: 2% 0% 0% 0%;
+        }
+        .side_table{
+            width: 92%;
+        }
+        .big-header{
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="title">HTML</header>
+    <div class="content">
+        <nav class="index">
+            <h3>목차</h3>
+            <ul>
+                <li class="index_list">역사</li>
+                <li class="index_list">마크업</li>
+                <li class="index_list">시맨틱 웹</li>
+            </ul>
+        </nav>
+        <section class="main">
+            <header class="subtitle">역사</header>
+            <article>
+                1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다. 
+                인콰이어는 CERN의 연구원들이 문서를 이용하고 공유하기 위한 체계였다. 
+                1989년에 팀 버너스리는 인터넷 기반 하이퍼텍스트 체계를 제안하는 메모를 작성했다.<sup>[1]</sup> 
+                버너스 리는 1990년 말에 HTML을 명시하고, 브라우저와 서버 소프트웨어를 작성했다. 
+                그 해에 버너스리와 CERN 데이터 시스템 엔지니어 로버트 카일리아우와 함께 CERN측에 자금 지원을 요청하였지만, 
+                이 프로젝트는 CERN으로부터 정식으로 채택 받지 못했다. 
+                버너스리의 개인적인 기록[3]에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다.
+            </article>
+            <footer class="annotation">
+                1. Tim Berners-Lee, "Information Management: A Proposal." CERN (1989년 3월, 1990년 5월). <a href="https://www.w3.org/History/1989/proposal.html">W3.org</a>
+            </footer>
+        </section>
+        <aside class="side_table">
+            <table>
+                <caption><strong>HTML</strong><br>(HyperText Markup Language)</caption>
+                <thead style="text-align: center;"><th colspan="2"><img src="./HTML5_logo_and_wordmark.svg.png" alt=""></th></thead>
+                <tbody>
+                    <tr>
+                        <td>개발자</td>
+                        <td>W3C와 WHATWG</td>
+                    </tr>
+                    <tr>
+                        <td>발표일</td>
+                        <td>1993년(30년 전)</td>
+                    </tr>
+                    <tr>
+                        <td>최근 버전</td>
+                        <td><a href="https://html.spec.whatwg.org/">Living Standard</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </div>
+
+    <footer class="info">
+        이 문서는 2023년 4월 29일 (토) 22:40에 마지막으로 편집되었습니다. <br>
+        모든 문서는 크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0에 따라 사용할 수 있으며, 추가적인 조건이 적용될 수 있습니다. 자세한 내용은 이용 약관을 참고하십시오.<br>
+        Wikipedia®는 미국 및 다른 국가에 등록되어 있는 Wikimedia Foundation, Inc. 소유의 등록 상표입니다.
+        <ul class="info_list">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">위키백과 소개</a></li>
+            <li><a href="#">개발자</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
