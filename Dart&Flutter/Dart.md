@@ -11,3 +11,27 @@
 - Final variables : C의 const처럼 수정이 불가능한 변수이다. var 대신 final 키워드를 써서 사용할 수 있다.
 - late variables : 변수를 먼저 선언하고 초기화는 나중에 할 수 있는 변수이다. 보통 api 작업할 때 많이 사용되며 변수에 값이 할당되기 전에는 호출이 되지 않으므로 Null Safety가 보장된다.
 - Constant variables : 컴파일 타임에 값을 알고있는 상수이다.
+
+## 자료형
+    Dart에서 대부분의 타입은 객체로 이루어져 있다.
+
+### 기본 자료형
+- int : 정수형
+- double : 실수형
+- String : 문자열
+- bool : True, False
+- num : int와 double의 부모 클래스로, num으로 타입을 정의하면 정수와 실수를 모두 할당할 수 있다.
+- Map : Map<Stirng, object> = {'name' : 'Oneiric', 'xp' : 19.99,};
+- Set : 리스트와는 달리 속한 아이템들이 모두 유니크한 집합, Set<int> numbers = {1, 2, 3, 4};
+
+### 리스트
+    변수들의 집합으로 아래와 같은 문법을 사용한다.
+        var oldFriends = ['nico', 'lynn'];
+        var newFriends = [
+            'lewis',
+            'ralph',
+            if(condition) 'darren'
+            for(var friend in oldFriends) "Best Friend $friend",
+        ]
+- collection if : 리스트를 생성할 때 if(condition) value 와 같이 작성하면 condition이 true일 때 value가 리스트에 추가된다.
+- collection for : 리스트를 생성할 때 for(item in list) "~~~ $item"와 같이 작성하면 list의 값이 변형되어 추가된다.
