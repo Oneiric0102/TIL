@@ -1,12 +1,26 @@
-void main(){
-  print("hello");
-  var numbers = {1, 2, 3, 4};
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  print(numbers);
+typedef ListOfInts = List<int>;
 
-  var price = 15000;
-  print("Total price ${price}");
-  print("Total price $price");
+String sayHello({
+    required String name,
+    required int age,
+    String country = 'korea'}) {
+  return "Hello $name, you are $age, and you come from $country";
+}
+
+String capitalizeName(String? name) => name?.toUpperCase()??'UNKNOWN';
+
+ListOfInts reverseListOfNumbers(ListOfInts list){
+  var reversed = list.reversed;
+  return reversed.toList();
+}
+void main(){
+  print(sayHello(
+    name:'Oneiric',
+    age: 26,
+    ));
+  
+  capitalizeName('oneiric');
+  capitalizeName(null);
+
+  reverseListOfNumbers([1,2,3]);
 }

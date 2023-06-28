@@ -35,3 +35,11 @@
         ]
 - collection if : 리스트를 생성할 때 if(condition) value 와 같이 작성하면 condition이 true일 때 value가 리스트에 추가된다.
 - collection for : 리스트를 생성할 때 for(item in list) "~~~ $item"와 같이 작성하면 list의 값이 변형되어 추가된다.
+
+## 함수
+    Dart의 함수는 객체이며, 아래와 같은 기능들이 제공된다.
+- Named Parameters : 함수 호출 시 매개변수명을 사용해서 매개변수를 넘겨줄 수 있다.
+- Optional Positional Parameters : 함수 호출 시 매개변수명을 사용해서 매개변수를 넘겨주지 않더라도 특정 매개변수가 필수 요소가 아님을 명시할 수 있다.
+- QQ Operator : 좌항이 null이면 우항을, null이 아니면 좌항을 반환한다.
+- QQ Equals : 좌항이 null이라면 우항을 좌항에 할당한다.
+- Typedef : 자료형이 헷갈리지 않도록 도움이 될 alias를 만드는 것이다.
