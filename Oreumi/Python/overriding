@@ -1,0 +1,10 @@
+class Animal:
+    def speak(self):
+        print("동물이 소리를 냅니다." )
+class Dog(Animal):
+    def speak(self):
+        print("개가 짖습니다." )
+animal = Animal()
+animal.speak() # 동물이 소리를 냅니다.
+dog = Dog()
+dog.speak() # 개가 짖습니다.
