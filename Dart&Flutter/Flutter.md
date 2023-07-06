@@ -20,3 +20,4 @@
 - TextStyle : Text 위젯의 스타일을 조정하는 위젯
 - Padding : Padding을 설정하는 위젯
 - Container : child를 가지고 있는 단순한 box, html과 div와 같은 역할
+- Flexable : Flex 레이아웃을 사용할 수 있는 위젯
