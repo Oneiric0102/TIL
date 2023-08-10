@@ -21,3 +21,5 @@
 - Padding : Padding을 설정하는 위젯
 - Container : child를 가지고 있는 단순한 box, html과 div와 같은 역할
 - Flexable : Flex 레이아웃을 사용할 수 있는 위젯
+- FutureBuilder : 비동기 처리를 위해 사용하는 위젯, Future값을 기다리고 데이터가 존재하는지를 알려줌
+- ListView : 목록을 보여주는것에 최적화된 위젯, .builder를 사용하면 화면에 보이는 데이터만 로딩 할 수 있음

@@ -1,0 +1,9 @@
+# node.js modules
+*.json
+node_modules/
+
+#input text
+*.txt
+
+#test file
+test.py
