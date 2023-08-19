@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h2>글 작성</h2>
+    <form method='post' action={% url 'article_create' %}>
+        {% csrf_token %}
+        <label>제목: </label>
+        <input type="text" name="title" required><br>
+        <label>내용: </label>
+        <textarea type="text" name="content" rows="4" required></textarea><br>
+        <input type="submit" value="Add Article">
+    </form>
+    <a href="{% url 'article_list' %}">글 목록으로 돌아가기</a>
+</body>
+<script src="{% static '/js/form.js' %}" defer></script>
+</html>
