@@ -48,7 +48,20 @@ INSTALLED_APPS = [
     "drf_test",
     "rest_framework",
     "drf_yasg",
+    "debug_toolbar",
+    "chatbot_app",
+    "chatterbot.ext.django_chatterbot",
 ]
+
+# CHATTERBOT = {
+#     "name": "ChatBot",
+#     "django_app_name": "chatbot_app",
+#     "storage_adapter": "chatterbot.storage.DjangoStorageAdapter",
+# }
+
+# CHATTERBOT_RESPONSE_SELECT_METHOD = (
+#     "chatterbot.ext.django_chatterbot.select_example_response"
+# )
 
 # google social login setting
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
@@ -88,6 +101,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "django_practice.urls"
@@ -163,3 +177,6 @@ STATIC_ROOT = "static"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+if DEBUG:
+    INTERNAL_IPS = ["127.0.0.1"]

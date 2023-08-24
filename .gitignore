@@ -10,3 +10,6 @@ test.py
 
 #django static
 Oreumi/Django/django_practice/static/
+
+#debug
+.vscode
