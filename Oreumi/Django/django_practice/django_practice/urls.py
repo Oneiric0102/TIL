@@ -47,6 +47,7 @@ urlpatterns = [
         name="schema-swagger-ui",
     ),
     path("", include("chatbot_app.urls")),
+    path("", include("shop.urls")),
 ]
 
 if settings.DEBUG:

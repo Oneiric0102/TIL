@@ -7,9 +7,17 @@ node_modules/
 
 #test file
 test.py
+sub_test.py
 
 #django static
 Oreumi/Django/django_practice/static/
 
 #debug
 .vscode
+
+#DB
+Oreumi/postgreSQL/
+
+#setting
+Oreumi/Django/django_practice/django_practice/settings.py
+Oreumi/Django/postgre_practice/postgre_practice/settings.py
